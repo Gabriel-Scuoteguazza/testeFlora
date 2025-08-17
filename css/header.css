@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 30px;
+    height: 6rem;
+}
+
+.flora_viva a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #909090;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Inter';
+    text-transform: uppercase;
+}
+
+
+header ul,
+header li {
+    list-style: none;
+}
+
+
+.flora_viva img {
+    height: 35px;
+}

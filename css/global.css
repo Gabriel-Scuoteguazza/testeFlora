@@ -4,18 +4,6 @@ body {
 	
 }
 
-a {
-	color: white;
-
-	&:hover {
-		color: white;
-		text-decoration: none;
-	}
-
-	&:visited {
-		color: white;
-	}
-}
 
 .container {
 	padding: 45px 63px;

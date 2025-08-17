@@ -1,8 +1,9 @@
 @import "./css/global.css";
 @import "./css/reset.css";
+@import url(./css/header.css);
 
 .coverCard {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter', sans-serif;
     width: 100vw;
     height: 100vh;
     background-size: cover;
@@ -20,13 +21,13 @@
         font-size: 180px;
         line-height: 1;
         font-weight: bold;
-        text-align: center;
-        text-transform: lowercase;
+        text-align: left;
+        text-transform: uppercase;
     }
 
     .coverCard__title {
         background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(11px);
 
         .coverCard__title_transparent {
             position: absolute;
@@ -58,11 +59,7 @@
             justify-content: center;
         }
     }
-.coverCard__subTitle1{
-    margin-top: 100px;
-    position: absolute;
-    z-index: 3;
-}
+
     .coverCard__content {
         position: relative;
         z-index: 2;
@@ -83,65 +80,27 @@
 
     .coverCard__subTitle {
         text-transform: uppercase;
-    }
+        margin-left: 100px;
+        color: #909090;
+        line-height: 20px;
+        font-weight: 800;
 
-    .coverCard__link {
-        padding: 12px 20px;
-        background: white;
-        text-decoration: none;
-        color: black;
-        mix-blend-mode: screen;
-        font-weight: bold;
-        border-radius: 4px;
-        transition: opacity 0.2s;
-
-        &:hover {
-            opacity: 0.5;
-        }
-
-        &:hover,
-        &:visited {
-            color: black;
-        }
     }
 }
 
-@media screen and (max-width: 1000px) {
-    .coverCard {
+  .coverCard__subTitle1 {
+        margin-top: 100px;
+        position: absolute;
+        z-index: 2;
+        text-transform: uppercase;
+        margin-left: 180px;
+        color: #909090;
+        font-weight: 800;
 
-        .coverCard__title,
-        .coverCard__title-shadow {
-            font-size: 150px;
-        }
+
     }
-}
 
-@media screen and (max-width: 600px) {
-    .coverCard {
-        .coverCard__content {
-            width: 80vw;
-
-            .container {
-                gap: 20px;
-            }
-        }
-
-        .coverCard__title,
-        .coverCard__title-shadow {
-            font-size: 80px;
-        }
-
-        .coverCard__title {
-            width: 80vw;
-        }
-
-        .coverCard__title-shadow {
-            left: 80vw;
-            width: 20vw;
-
-            .coverCard__title-shadow_white {
-                left: -80vw;
-            }
-        }
-    }
+.hea {
+    position: absolute;
+    z-index: 2;
 }
