@@ -1,97 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="quiz.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-    <title>Flora Viva</title>
+    <script src="./main.js" defer></script>
+    <title>Document</title>
 </head>
 
 <body>
+    <h1>Cai Macaco</h1>
+    <img id="imagem" src="../img/Macaco1.png" alt="">
+    <div id="exibicao-palavra"></div>
+    <input type="text" id="entrada-letra" placeholder="Chute uma letra" maxlength="1">
+    <button id="btn-chutar" onclick="chutarLetra()">Chutar</button>
 
-    <header class="hea">
-        <div class="flora_viva">
-            <a href="../index.html">
-                <img src="../imagem/FloraViva.png" alt="Flora Viva logo">
-            </a>
-        </div>
-
-        <nav>
-            <ul>
-                <li>
-                    <a href="">Conteúdos</a>
-                </li>
-            </ul>
-            <div class="destaque">
-                <ul>
-                    <li>
-                        <a href="">Quiz</a>
-                    </li>
-                </ul>
-            </div>
-            <ul>
-                <li>
-                    <a href="">Extras</a>
-                </li>
-            </ul>
-
-        </nav>
-    </header>
-
-    <article>
-        <section>
-            <div class="coverCard">
-                <h1 class="coverCard__title">
-                    <span class="coverCard__title_transparent">Quiz</span>
-                </h1>
-
-                <div class="coverCard__content">
-                    <div class="container">
-
-                        <div class="textos">
-                            <p class="coverCard__text">
-                            <ul>
-                                <li>
-                                    <span>Objetivo:</span><br>Salve o macaco acertando a palavra ecológica!
-                                </li>
-                            </ul>
-                            <ul>
-                                <li>
-                                    <span>Como Jogar:</span><br>Chute letras ou a palavra <br>Acerto = revela a letra
-                                    <br>Erro = cipó quebra (próxima imagem)
-                                </li>
-                            </ul>
-                            <ul>
-                                <li>
-                                    <span>Pontuação:</span><br>Macaco seguro (0 erros)<br>Cipó começa a quebrar (1-3
-                                    erros)<br>Quase caindo! (4-5 erros)<br>Game Over (6 erros)
-                                </li>
-                            </ul>
-                            </p>
-                        </div>
-
-
-
-                        <div class="botoes">
-                            <a href="#" class="coverCard__link1">Jogar</a>
-
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-    </article>
-
-
+    <h2>Letras chutadas</h2>
+    <div id="letras-chutadas"></div>
+    <div id="mensagem">Você ganhou!</div>
+    <button id="botao-reiniciar">Recomeçar</button>
+    <audio id="som-erro" src="../audio/SomdeMacaco.mp3"></audio>
 </body>
 
 </html>
